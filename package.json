@@ -1,8 +1,7 @@
 {
   "name": "aws-serverless-framework",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AWS Serverless Framework",
-  "type": "module",
   "license": "MIT",
   "engines": {
     "node": ">=14"
@@ -10,13 +9,13 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
-      "dist"
+    "dist"
   ],
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
-},
+  },
   "dependencies": {
     "node-match-path": "^0.6.3",
     "reflect-metadata": "^0.1.13",
